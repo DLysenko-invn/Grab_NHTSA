@@ -1,6 +1,6 @@
 # Grab data from the nhtsa.gov site
 
-
+The data placed in the "db" folder
 
 
 ## Venv
@@ -8,10 +8,10 @@
 python3 -m venv .venv
 ```
 ```
-pip install -r requirements.txt
-```
-```
 source .venv/bin/activate
+```
+```
+pip install -r requirements.txt
 ```
 
 
