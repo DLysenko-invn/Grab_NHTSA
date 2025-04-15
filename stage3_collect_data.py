@@ -34,10 +34,14 @@ for filename in os.listdir(DATABASE_DIR):
     
     for i in r['INSTRUMENTATION']:
         if i['SENTYPD'] == "ACCELEROMETER" or i['SENTYPD'] == "ANGULAR VELOCITY TRANSDUCER":
+            print("    ",i['SENTYPD']," ", end='')
             url = i['URL_TSV']
+            if not url:
+                print("No data")
+                continue
             fn = os.path.basename(url)
-            print("    ",i['SENTYPD'],fn," ",end='')
             path = os.path.join(DATABASE_DIR,filename,fn)
+            print(fn," ",end='')
             if os.path.isfile(path):
                 print('Skip')
                 continue
