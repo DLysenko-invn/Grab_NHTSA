@@ -4,6 +4,7 @@ The data placed in the "db" folder
 
 
 ## Venv
+Tested with Python 3.10
 ```
 python3 -m venv .venv
 ```
