@@ -1,3 +1,9 @@
+# Moved to
+
+https://github.com/InvenSenseInc/algo.motion_car_crash_data/tree/master/nhtsa_db
+
+--------------------------
+
 # Grab data from the nhtsa.gov site
 
 The data placed in the "db" folder
